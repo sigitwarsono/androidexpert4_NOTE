@@ -1,7 +1,6 @@
-package com.example.androidexpert3_mynoteapp
+package com.example.consumerapp
 
 import android.content.ContentValues
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
@@ -10,14 +9,12 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidexpert3_mynoteapp.db.DatabaseContract
-import com.example.androidexpert3_mynoteapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-import com.example.androidexpert3_mynoteapp.db.DatabaseContract.NoteColumns.Companion.DATE
-import com.example.androidexpert3_mynoteapp.db.DatabaseContract.NoteColumns.Companion.DESCRIPTION
-import com.example.androidexpert3_mynoteapp.db.DatabaseContract.NoteColumns.Companion.TITLE
-import com.example.androidexpert3_mynoteapp.db.NoteHelper
-import com.example.androidexpert3_mynoteapp.entity.Note
-import com.example.androidexpert3_mynoteapp.helper.MappingHelper
+import com.example.consumerapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.example.consumerapp.db.DatabaseContract.NoteColumns.Companion.DATE
+import com.example.consumerapp.db.DatabaseContract.NoteColumns.Companion.DESCRIPTION
+import com.example.consumerapp.db.DatabaseContract.NoteColumns.Companion.TITLE
+import com.example.consumerapp.entity.Note
+import com.example.consumerapp.helper.MappingHelper
 import kotlinx.android.synthetic.main.activity_note_add_update.*
 import java.text.SimpleDateFormat
 import java.util.*
